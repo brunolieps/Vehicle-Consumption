@@ -3,6 +3,17 @@
     margin: 0px;
 }
 
+::-moz-selection {
+    /* Code for Firefox */
+    color: #400400;
+    background: #00FF6B;
+}
+
+::selection {
+    color: #400400;
+    background: #00FF6B;
+}
+
 ::-webkit-input-placeholder {
     /* Edge */
     color: white;
