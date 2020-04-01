@@ -1,0 +1,44 @@
+<hmtl>
+
+    <head>
+        <script src="calc.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Vehicle consumption</h1>
+            <div class="item">
+                <div class="item_container">
+                    <p>what is the consumption of your vehicle?</p>
+                    <input id="consumption" type="number" placeholder="km/l">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_container">
+                    <p>what was the average speed of the trip?</p>
+                    <input id="average_speed" type="number" placeholder="km/h">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_container">
+                    <p>how long was the trip?</p>
+                    <input id="travel_time" type="number" placeholder="h">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_container">
+                    <p>fuel price</p>
+                    <input id="fuel_price" type="number" placeholder="$">
+                </div>
+            </div>
+            <button onclick="Calculate()">OK</button>
+            <div class="result">
+                <p id="result"></p>
+            </div>
+            <p id="credit">created by <a href="https://bruno-lira.github.io/Bruno-Lira">Bruno Lira</a></p>
+        </div>
+    </body>
+
+</hmtl>
