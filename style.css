@@ -1,117 +1,64 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
-::-moz-selection {
-    /* Code for Firefox */
-    color: #400400;
-    background: #00FF6B;
-}
-
-::selection {
-    color: #400400;
-    background: #00FF6B;
-}
-
-::-webkit-input-placeholder {
-    /* Edge */
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-::placeholder {
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-}
-
 body {
-    background-color: #400400;
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-    text-align: center;
+    background: #dfdfdf;
+    height: 99vh;
+    width: 99vw;
 }
 
-.container {
-    width: 80vw;
-    margin: auto;
-    position: relative;
-    top: 12vh;
+.box {
+    background: #efefef;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 .item {
-    background-color: #BF0D00;
-    min-height: 25vh;
-    width: 15vw;
-    padding: 1.25vw;
-    margin: 1.25vw;
-    float: left;
-    font-size: 20px;
-    border-radius: 2vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #fff;
+    width: 300px;
+    padding: 30px;
+    margin: 30px 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .25s;
 }
 
-input {
-    background-color: #BF0D00;
-    color: white;
-    font-size: 25px;
-    width: 10vw;
-    height: 10vh;
-    border: 0px;
-    text-align: center;
+.item:hover{
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    background-color: #BF0D00;
-    border: 0px;
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 20px;
-    padding: 1vw;
-    width: 5vw;
-    border-radius: 1vw;
-    position: relative;
-    top: 3vh;
-    cursor: pointer;
+    width: 50%;
+    margin: 0px 25%;
+    padding: 10px;
+    border: 1px solid #242424;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: background .25s, border .25s, box-shadow .25s;
 }
 
 button:hover {
-    background-color: #FF1100;
+    background: #fff;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .result {
-    background-color: #BF0D00;
-    padding: 1vh 0 1vh 0;
-    min-height: 15vh;
-    font-size: 40px;
-    border-radius: 2vw;
-    position: relative;
-    top: 10vh;
-
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-#credit{
-    position: relative;
-    top: 12vh;
-}
-
-#credit a{
-    color: #00FF6B;
-    text-decoration: none;
+#credit {
+    text-align: right;
 }

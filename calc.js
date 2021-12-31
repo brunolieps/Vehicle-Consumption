@@ -1,17 +1,12 @@
 function Calculate() {
-    var consumption = document.getElementById("consumption").value;
-    var averageSpeed = document.getElementById("average_speed").value;
-    var travelTime = document.getElementById("travel_time").value;
-    var fuelPrice = document.getElementById("fuel_price").value;
+    var distance = document.getElementById("distance").value;
+    var gas = document.getElementById("gas").value;
 
-    var trip = averageSpeed * travelTime;
-    var consumptionPrice = (((averageSpeed * travelTime) / consumption) * fuelPrice)
+    var consumption = distance / gas;
 
-    if (consumption != "" && averageSpeed != "" && travelTime != "" && fuelPrice != "") {
-        document.getElementById("result").innerHTML = "You ran " + trip + "km and spent $" + consumptionPrice.toFixed(2);
-    }else if(averageSpeed != "" && travelTime != ""){
-        document.getElementById("result").innerHTML = "You ran " + trip + "km";
-    }else if(consumption == "" && averageSpeed == "" && travelTime == "" && fuelPrice == ""){
+    if (distance != "" && gas != "") {
+        document.getElementById("result").innerHTML = "Your car do " + consumption.toFixed(2) + " km/l";
+    }else if(distance == "" && gas == ""){
         document.getElementById("result").innerHTML = "fill in your travel information!";
     }
 }
